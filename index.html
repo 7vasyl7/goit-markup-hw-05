@@ -61,7 +61,7 @@
       <section class="visionhero">
         <div class="container">
           <h1 class="vision-titl">Effective Solutions for Your Business</h1>
-          <button type="button" class="vision-btn">Order Service</button>
+          <button type="button" class="vision-btn" data-modal-open>Order Service</button>
         </div>
       </section>
       <!----------------------- секція 1 -->
@@ -457,5 +457,19 @@
         </div>
       </div>
     </footer>
+    <!------------------------------  Modal Window -->
+    
+    <div class="modal-box" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-dutton" data-modal-close>
+          <svg class="modal-icon"
+          width="8"
+          height="8" >
+            <use href="./images/icons.svg#icon-modal-close" > </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
