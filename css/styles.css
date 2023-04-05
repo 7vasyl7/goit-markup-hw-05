@@ -112,7 +112,7 @@ body {
 .header {
   border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 }
 
 .header-container {
@@ -149,7 +149,7 @@ body {
   gap: 40px;
 }
 
-.header-item {
+.header-item {position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -160,6 +160,19 @@ body {
 
 .header-item:is(:hover, :focus) {
   color: #404bbf;
+}
+
+.activ-page::after{
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+  content:"" ;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404BBF;
+  
+
 }
 
 .header-mail {
@@ -622,7 +635,7 @@ body {
   border-radius: 4px;
 }
 
-.modal-dutton {
+.modal-button {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -637,4 +650,6 @@ body {
   background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-}
+    transition: background-color var(--transition);}
+
+.modal-button:is(:hover,:focus){ background-color:var(--button-background-hover, #404BBF);}
