@@ -176,8 +176,13 @@ body {
   width: 100%;
   height: 4px;
   background-color: #404BBF;
+<<<<<<< HEAD
 
 
+=======
+border-radius:2px;
+  
+>>>>>>> b3dccc432f7480fffdb50c656de1b9d9e97580de
 
 }
 
@@ -662,9 +667,13 @@ body {
   transition: background-color var(--transition), fill var(--transition);
 }
 
+<<<<<<< HEAD
 .modal-button:is(:hover, :focus) {
   background-color: var(--button-background-hover, #404BBF);
 }
 
 
    .modal-button:hover, :focus .modal-icon{fill: white;}
+=======
+.modal-button:is(:hover,:focus){ background-color:var(--button-background-hover, #404BBF);}
+>>>>>>> b3dccc432f7480fffdb50c656de1b9d9e97580de
